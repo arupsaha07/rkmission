@@ -72,6 +72,13 @@ header {
     height: auto;
 }
 
+.icon-size-lg {
+    min-width: 3.75rem;
+    /* 60px */
+    height: 3.75rem;
+    /* 60px */
+}
+
 @media (min-width: 768px) {
     .nav-placement {
         top: 3.5rem;
@@ -155,6 +162,10 @@ header {
     /* 20px */
     height: 0.25rem;
     /* 4px */
+}
+
+li:last-child {
+    border-bottom: none !important;
 }
 
 .underline.blue {
