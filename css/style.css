@@ -245,10 +245,83 @@ li:last-child {
 }
 
 .nav-pills .nav-link {
-    border: 1px solid #0d6efd;
-    color: #0d6efd;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-dark);
 }
 
 .nav-pills .nav-link.active {
-    background-color: #0d6efd;
+    background-color: var(--primary-color);
 }
+
+.admission-section-title {
+    position: relative;
+}
+
+.admission-section-title::after {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 4px;
+    background: var(--primary-color);
+    margin-top: 6px;
+    border-radius: 2px;
+}
+
+.pdf-card {
+    border: 1px solid #dee2e6;
+    border-radius: .75rem;
+    padding: .75rem 1rem;
+}
+
+.badge-new {
+    background: #ffc107;
+    color: #212529;
+    font-size: .65rem;
+}
+
+.timeline-item {
+    padding-left: 0;
+    /* icons include their own spacing */
+    transition: background .2s ease;
+}
+
+/* connector dot placed between icon block and content */
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: 180px;
+    /* between icon (width ~120px) and content */
+    top: 28px;
+    width: 12px;
+    height: 12px;
+    background: #0d6efd;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.3);
+    display: block;
+}
+
+.timeline-item:hover {
+    background: rgba(13, 110, 253, 0.05);
+}
+
+@media (max-width: 768px) {
+    .timeline-item {
+        flex-direction: column;
+        padding-left: 0;
+    }
+
+    .timeline-item::before {
+        left: 30px;
+        top: 60px;
+    }
+
+    .timeline-icon {
+        margin-bottom: .5rem;
+        text-align: left;
+    }
+    .timeline-item::before {
+        display: none;
+    }
+}
+
