@@ -59,6 +59,7 @@ header {
 .bg-gray {
     background-color: #E9E9E9 !important;
 }
+
 .text-gray {
     color: var(--gray-color) !important;
 }
@@ -336,15 +337,18 @@ li:last-child {
         margin-bottom: .5rem;
         text-align: left;
     }
+
     .timeline-item::before {
         display: none;
     }
 }
+
 .staff-list {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 1rem;
 }
+
 .staff-list img {
     width: 130px;
     height: 130px;
@@ -357,3 +361,14 @@ li:last-child {
     gap: 1rem;
 }
 
+.facilities-thumbnail a,
+.facilities-logo {
+    width: 200px;
+    min-width: 200px;
+    height: 200px;
+}
+
+.facilities-logo > div {
+    width: 70px;
+    height: 70px;
+}
