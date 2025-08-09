@@ -350,3 +350,10 @@ li:last-child {
     height: 130px;
     object-fit: cover;
 }
+
+.document-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
