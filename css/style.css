@@ -8,8 +8,30 @@
 
 :root {
     --primary-color: #3389D9;
+    --bs-primary: #3389D9;
+    --bs-btn-border-color: #3389D9;
+    --bs-btn-hover-border-color: #3389D9;
+    --bs-btn-color: #3389D9;
+    --bs-btn-hover-bg: #3389D9;
+    --bs-btn-active-bg: #3389D9;
+    --bs-btn-active-border-color: #3389D9;
     --primary-dark: #257CCD;
     --border-color: #D2D2D2;
+}
+
+.primary-gradient {
+    background-image: linear-gradient(to right, rgb(179, 229, 252), rgb(2, 136, 209));
+    /* Blue gradient */
+}
+
+.success-gradient {
+    background-image: linear-gradient(to right, #c8e6c9, #388e3c);
+    /* Green gradient */
+}
+
+.warning-gradient {
+    background-image: linear-gradient(to right, #ffecb3, #ffa000);
+    /* orange gradient */
 }
 
 body {
@@ -392,4 +414,53 @@ li:last-child {
 
 .report-section+.report-section {
     margin-top: 2rem;
+}
+
+.cell-card {
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    height: 100%;
+}
+
+.cell-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0.75rem 1.25rem rgba(0, 0, 0, 0.08);
+}
+
+.cell-icon {
+    width: 60px;
+    min-width: 60px;
+    height: 60px;
+    font-size: 1.5rem;
+}
+
+.nav-pills .nav-link {
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+}
+
+.nav-pills .nav-link.active {
+    background-color: var(--bs-primary);
+    color: white;
+    border-color: var(--bs-primary);
+}
+
+.download-list li {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.75rem 0;
+}
+
+.download-list img {
+    width: 32px;
+    height: 32px;
 }

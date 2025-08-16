@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NAAC – Sree Sree Ramkrishna B.Ed College</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <!-- HEADER -->
+    <!-- Add your site's existing header here -->
+
+    <!-- HERO -->
+    <section class="bg-primary text-white text-center py-5">
+        <div class="container">
+            <h1 class="fw-bold display-5"><i class="bi bi-mortarboard-fill me-2"></i>NAAC</h1>
+            <p class="lead mb-0">National Assessment and Accreditation Council – Documents & Reports</p>
+        </div>
+    </section>
+
+    <main>
+        <!-- REPORT SECTIONS -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <ul class="nav nav-pills gap-3 justify-content-center mb-4" id="naacTabs" role="tablist">
+                    <li class="nav-item">
+                        <button class="nav-link active" id="docs-tab" data-bs-toggle="pill" data-bs-target="#docs"
+                            type="button">
+                            <i class="bi bi-file-earmark-fill"></i> NAAC Documents
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link" id="ssr-tab" data-bs-toggle="pill" data-bs-target="#ssr" type="button">
+                            <i class="bi bi-journal-text"></i> SSR
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link" id="ssr-support-tab" data-bs-toggle="pill"
+                            data-bs-target="#ssr-support" type="button">
+                            <i class="bi bi-collection-fill"></i> SSR Supporting Docs (IQAC)
+                        </button>
+                    </li>
+                </ul>
+
+                <div class="tab-content">
+                    <!-- NAAC Documents -->
+                    <div class="tab-pane fade show active" id="docs" role="tabpanel">
+                        <ul class="list-unstyled download-list">
+                            <li>
+                                <img src="./icons/pdf.svg" alt="pdf">
+                                <div>
+                                    <h6 class="mb-1">NAAC Guidelines 2024</h6>
+                                    <small class="text-muted">Official NAAC guidelines document</small>
+                                </div>
+                                <a href="pdfs/naac-guidelines-2024.pdf"
+                                    class="btn btn-outline-warning rounded-circle ms-auto">
+                                    <i class="bi bi-arrow-down-circle"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <img src="./icons/pdf.svg" alt="pdf">
+                                <div>
+                                    <h6 class="mb-1">NAAC Self-Assessment Template</h6>
+                                    <small class="text-muted">For internal preparation</small>
+                                </div>
+                                <a href="pdfs/naac-self-assessment.pdf"
+                                    class="btn btn-outline-warning rounded-circle ms-auto">
+                                    <i class="bi bi-arrow-down-circle"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- SSR -->
+                    <div class="tab-pane fade" id="ssr" role="tabpanel">
+                        <ul class="list-unstyled download-list">
+                            <li>
+                                <img src="./icons/pdf.svg" alt="pdf">
+                                <div>
+                                    <h6 class="mb-1">SSR Report 2024</h6>
+                                    <small class="text-muted">Self Study Report for Accreditation</small>
+                                </div>
+                                <a href="pdfs/ssr-2024.pdf" class="btn btn-outline-warning rounded-circle ms-auto">
+                                    <i class="bi bi-arrow-down-circle"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <img src="./icons/pdf.svg" alt="pdf">
+                                <div>
+                                    <h6 class="mb-1">SSR Report 2023</h6>
+                                    <small class="text-muted">Self Study Report for Accreditation</small>
+                                </div>
+                                <a href="pdfs/ssr-2023.pdf" class="btn btn-outline-warning rounded-circle ms-auto">
+                                    <i class="bi bi-arrow-down-circle"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- SSR Supporting Docs (IQAC) -->
+                    <div class="tab-pane fade" id="ssr-support" role="tabpanel">
+                        <ul class="list-unstyled download-list">
+                            <li>
+                                <img src="./icons/pdf.svg" alt="pdf">
+                                <div>
+                                    <h6 class="mb-1">Supporting Documents 2024</h6>
+                                    <small class="text-muted">Submitted to IQAC</small>
+                                </div>
+                                <a href="pdfs/supporting-docs-2024.pdf"
+                                    class="btn btn-outline-warning rounded-circle ms-auto">
+                                    <i class="bi bi-arrow-down-circle"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <img src="./icons/pdf.svg" alt="pdf">
+                                <div>
+                                    <h6 class="mb-1">Supporting Documents 2023</h6>
+                                    <small class="text-muted">Submitted to IQAC</small>
+                                </div>
+                                <a href="pdfs/supporting-docs-2023.pdf"
+                                    class="btn btn-outline-warning rounded-circle ms-auto">
+                                    <i class="bi bi-arrow-down-circle"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <!-- Add your site's existing footer here -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
